@@ -10,20 +10,20 @@
 	.title-font {
 		color: white; 
 		font-family: monospace;
-		text-align: center;
 	}
 
-	.container {
+	#first-container {
 		width: 100%;
 		height: 130px;
 	}
 
-	.first-block {
+	#first-block {
 		width: 100%;
 		height: 60px;
 		border-bottom-width: 2px; 
 		border-bottom-color: white;
 		border-bottom-style: solid;
+		text-align: center;
 	}
 
 	.linkedin-logo {
@@ -37,18 +37,33 @@
 		height: 45px;
 	}
 
+	input {
+		font-family: monospace;
+	}
+
+	@media (max-width: 499px) {
+		body {
+			background-color: rgb(165,206,11);
+		}
+	}
+
+	@media (min-width: 500px) {
+		body {
+			background-color: rgb(50,49,50);
+		}
+	}
+
 
 </style>
 
-<body style="background-color: rgb(50,49,50);">
+<body>
 	
-	<div class = "container">
+	<div id = "container">
 		
-		<div class = "first-block">
+		<div id = "first-block">
 			<h2 class="title-font">
 				Hi. I'm Mohamed Elassar<br>Welcome to My Portfolio :)
 			</h2>
-
 		</div>
 
 		<div align="center" style="padding-top: 10px">
@@ -63,11 +78,27 @@
 			</a>
 		</div>
 
+	</div>
 
+
+	<div>		
+		<form action="https://www.google.com" style="text-align: center;">
+				<h2 class = "title-font">Want to connect? Feel to free to add your info below and send me a message :)</h2>
+				<input list = "prefixes" name="Prefix" placeholder="prefix"><br>
+				<datalist id="prefixes">
+					<option value="Mr.">
+					<option value="Ms.">
+					<option value="Mrs.">
+				</datalist>
+				<input type="text" name="First-Name" placeholder="first name"><br>
+				<input type="text" name="Last-Name" placeholder="last name"><br>
+				<input type="email" name="Email" placeholder="email address"><br>
+				<input type="text" name="Text-Box" placeholder="message"><br>
+				<button type="submit">Submit</button>
+		</form>
 	</div>
 
 
 </body>
-
 
 </html>
