@@ -2,104 +2,51 @@
 <html>
 
 <head>
-	<title>My Portofolio</title>
+	<title>Mohamed Elassar Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-	
-	.title-font {
-		color: white; 
-		font-family: monospace;
-	}
-
-	#first-container {
-		width: 100%;
-		height: 10%;
-	}
-
-	#first-block {
-		width: 100%;
-		height: 5%;
-		border-bottom-width: 2px; 
-		border-bottom-color: white;
-		border-bottom-style: solid;
-		text-align: center;
-	}
-
-
-	.linkedin-logo {
-		width: 50px;
-		height: 45px;
-	}
-
-	.github-logo {
-		border-radius: 90%
-		width: 50px;
-		height: 45px;
-	}
-
-	input, button, textarea {
-		font-family: monospace;
-	}
-
-	input:hover, button:hover, textarea:hover {
-		background-color: pink;
-	}
-
-	@media (min-width: 1081px) {
-	body {
-		background-color: rgb(50,49,50);
-		}
-	}
-
-	@media (max-width: 1080px) {
-		body {
-			background-color: rgb(165,206,11);
-		}
-	}
-
-
-</style>
-
 <body>
 	
 	<div id = "first-container">
-		
-		<div id = "first-block">
-			<h2 class="title-font">
-				Hi. I'm Mohamed Elassar<br>Welcome to My Portfolio!
-			</h2>
-		</div>
-
-		<div align="center" style="padding-top: 10px">
-			<a title = "Linkedin" href="https://www.linkedin.com/in/mohamed-elassar/" target= "_blank">
-				<img class = "linkedin-logo" src="https://www.pngkit.com/png/full/14-145502_linkedin-color-icon-linkedin-logo-round-png.png" alt = "Linkedin logo">
-			</a>
-			<a title = "GitHub" href="https://github.com/MohamedElassar" target= "_blank">
-				<img class="github-logo" src="https://image.flaticon.com/icons/svg/25/25231.svg" alt = "Github logo">
-			</a>
-			<a title = "Resume" href="https://drive.google.com/file/d/15Eq7hWGMu_8EPCFgVkd0wFDowUFF1P_4/view?usp=sharing" target= "_blank">
-				<img class="github-logo" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/adobe-acrobat-pdf-file-50747.png" alt = "pdf logo">
-			</a>
-		</div>
-
+		<h2 class = "title-font">
+			Hi. My name is Mohamed Elassar<br>Welcome to My Portfolio!
+		</h2>
 	</div>
 
+	<div id = "logos">
+		<a title = "Linkedin" href="https://www.linkedin.com/in/mohamed-elassar/" target= "_blank">
+			<img class = "linkedin-logo" src="https://www.pngkit.com/png/full/14-145502_linkedin-color-icon-linkedin-logo-round-png.png" alt = "Linkedin logo">
+		</a>
+		<a title = "GitHub" href="https://github.com/MohamedElassar" target= "_blank">
+			<img class="github-logo" src="https://image.flaticon.com/icons/svg/25/25231.svg" alt = "Github logo">
+		</a>
+		<a title = "Resume" href="https://drive.google.com/file/d/15Eq7hWGMu_8EPCFgVkd0wFDowUFF1P_4/view?usp=sharing" target= "_blank">
+			<img class="github-logo" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/adobe-acrobat-pdf-file-50747.png" alt = "pdf logo">
+		</a>
+	</div>
+	
+	<div>
+		<h2 class = "title-font" id = "logos">Want to connect? Feel to free to add your info below and send me a message :)</h2>
+	</div>
 
-	<div style="text-align: center;">
-		<h2 class = "title-font">Want to connect? Feel to free to add your info below and send me a message :)</h2>
+	<div id = "Form">
 		<form action="https://www.google.com">
-				<input list = "prefixes" name="Prefix" placeholder="prefix"><br>
+				<label for="Prefix"></label>
+				<input list = "prefixes" name="Prefix" id = "Prefix" placeholder="prefix"><br>
 				<datalist id="prefixes">
 					<option value="Mr.">
 					<option value="Ms.">
 					<option value="Mrs.">
 				</datalist>
-				<input type="text" name="First-Name" placeholder="first name"><br>
-				<input type="text" name="Last-Name" placeholder="last name"><br>
-				<input type="email" name="Email" placeholder="email address"><br>
+				<label for="First-Name"></label>
+				<input type="text" name="First-Name" id="First-Name" placeholder="first name"><br>
+				<label for="Last-Name"></label>
+				<input type="text" name="Last-Name" id="Last-Name" placeholder="last name"><br>
+				<label for="Email"></label>
+				<input type="email" name="Email" id="Email" placeholder="email address"><br>
 				<textarea placeholder="message"></textarea><br>
 				<button type="submit">submit</button>
 		</form>
